@@ -9,5 +9,7 @@ data class Resep(
     @SerializedName("bahan")
     val bahan:String?,
     @SerializedName("langkah")
-    val langkah:String?
+    val langkah:String?,
+    @SerializedName("imgUrl")
+    val imgUrl:String?
 )

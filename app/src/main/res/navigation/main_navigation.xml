@@ -1,6 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main_navigation">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/itemHome">
 
+    <fragment
+        android:id="@+id/itemHome"
+        android:name="com.ubaya.thecook160418027.View.HomeFragment"
+        android:label="The Cook"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/actToDetil"
+            app:destination="@id/detilResepFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/detilResepFragment" />
+        <argument
+            android:name="name"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="bahan"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="langkah"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="imgUrl"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/actToAdd"
+            app:destination="@id/itemAdd"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/itemAdd" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemSearch"
+        android:name="com.ubaya.thecook160418027.View.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/itemAdd"
+        android:name="com.ubaya.thecook160418027.View.AddResepFragment"
+        android:label="Submit Resep"
+        tools:layout="@layout/fragment_add_resep" />
+    <fragment
+        android:id="@+id/itemHistory"
+        android:name="com.ubaya.thecook160418027.View.HistoryFragment"
+        android:label="History"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/itemProfile"
+        android:name="com.ubaya.thecook160418027.View.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/detilResepFragment"
+        android:name="com.ubaya.thecook160418027.View.DetilResepFragment"
+        android:label="Detil Resep"
+        tools:layout="@layout/fragment_detil_resep" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.ubaya.thecook160418027.View.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.ubaya.thecook160418027.View.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" />
 </navigation>
