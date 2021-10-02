@@ -20,13 +20,12 @@ class HomeFeaturedAdapter(val resepList:ArrayList<Resep>):RecyclerView.Adapter<H
     override fun onBindViewHolder(holder: FeaturedViewHolder, position: Int) {
         holder.view.txtNama.text = resepList[position].name
         holder.view.cardResep1.setOnClickListener {
-//            val action = resepList[position].id?.let { it1 ->
-//                StudentListFragmentDirections.actionStudentDetail(
-//                    it1,resepList[position].name,resepList[position].bahan,resepList[position].langkah,resepList[position].imgUrl)
-//            }
-//            if (action != null) {
-//                Navigation.findNavController(it).navigate(action)
-//            }
+            val action = resepList[position].id?.let { it1 ->
+                HomeFragmentDirections.actToDetil(it1,resepList[position].name,resepList[position].bahan,resepList[position].langkah,resepList[position].imgUrl)
+            }
+            if (action != null) {
+                Navigation.findNavController(it).navigate(action)
+            }
         }
         holder.view.imgResep.loadImage(resepList[position].imgUrl,
             holder.view.progressBarCard)
