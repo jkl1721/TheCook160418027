@@ -33,6 +33,14 @@
         android:label="Search"
         tools:layout="@layout/fragment_search" >
         <action
+            android:id="@+id/actToDetil"
+            app:destination="@id/detilResepFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/detilResepFragment" />
+        <action
             android:id="@+id/actToAdd"
             app:destination="@id/itemAdd"
             app:enterAnim="@anim/nav_default_enter_anim"
@@ -51,6 +59,14 @@
         android:name="com.ubaya.thecook160418027.View.MyRecipeFragment"
         android:label="My Recipes"
         tools:layout="@layout/fragment_myrecipe">
+        <action
+            android:id="@+id/actToDetil"
+            app:destination="@id/detilResepFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/detilResepFragment" />
         <action
             android:id="@+id/actToAdd"
             app:destination="@id/itemAdd"

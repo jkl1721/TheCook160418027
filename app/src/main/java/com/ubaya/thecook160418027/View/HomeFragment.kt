@@ -36,10 +36,10 @@ class HomeFragment : Fragment() {
         })
         viewModel1.loadingLD.observe(viewLifecycleOwner, Observer {
             if(it == true) {
-                recRecipes.visibility = View.GONE
+                recFeatured.visibility = View.GONE
                 progressBarHome1.visibility = View.VISIBLE
             } else {
-                recRecipes.visibility = View.VISIBLE
+                recFeatured.visibility = View.VISIBLE
                 progressBarHome1.visibility = View.GONE
             }
         })
