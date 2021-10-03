@@ -34,7 +34,7 @@ class FeaturedViewModel(application: Application): AndroidViewModel(application)
                 loadingLD.value = false
             },
             {
-                recipesLoadErrorLD.value = false
+                recipesLoadErrorLD.value = true
                 loadingLD.value = false
             })
         stringRequest.tag = TAG

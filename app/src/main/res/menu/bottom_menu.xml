@@ -17,10 +17,10 @@
         android:title="Add"
         app:showAsAction="always" />
     <item
-        android:id="@+id/itemHistory"
-        app:showAsAction="always"
-        android:icon="@drawable/ic_baseline_history_24"
-        android:title="History" />
+        android:id="@+id/itemMyRecipe"
+        android:icon="@drawable/ic_baseline_star_rate_24"
+        android:title="My Recipes"
+        app:showAsAction="always" />
     <item
         android:id="@+id/itemProfile"
         app:showAsAction="always"

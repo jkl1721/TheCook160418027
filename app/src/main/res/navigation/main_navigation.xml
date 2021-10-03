@@ -47,10 +47,10 @@
         android:label="Submit Resep"
         tools:layout="@layout/fragment_add_resep" />
     <fragment
-        android:id="@+id/itemHistory"
-        android:name="com.ubaya.thecook160418027.View.HistoryFragment"
-        android:label="History"
-        tools:layout="@layout/fragment_history" >
+        android:id="@+id/itemMyRecipe"
+        android:name="com.ubaya.thecook160418027.View.MyRecipeFragment"
+        android:label="My Recipes"
+        tools:layout="@layout/fragment_myrecipe">
         <action
             android:id="@+id/actToAdd"
             app:destination="@id/itemAdd"
@@ -109,7 +109,7 @@
             app:popUpTo="@id/itemAdd" />
     </fragment>
     <fragment
-        android:id="@+id/aboutFragment"
+        android:id="@+id/itemAbout"
         android:name="com.ubaya.thecook160418027.View.AboutFragment"
         android:label="About"
         tools:layout="@layout/fragment_about" >
@@ -123,10 +123,10 @@
             app:popUpTo="@id/itemAdd" />
     </fragment>
     <fragment
-        android:id="@+id/loginFragment"
-        android:name="com.ubaya.thecook160418027.View.LoginFragment"
-        android:label="Login"
-        tools:layout="@layout/fragment_login" >
+        android:id="@+id/itemSetting"
+        android:name="com.ubaya.thecook160418027.View.SettingFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_setting">
         <action
             android:id="@+id/actToAdd"
             app:destination="@id/itemAdd"
