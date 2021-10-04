@@ -29,6 +29,7 @@
                     android:fontFamily="@font/poppins_bold"
                     android:text="Post Recipes"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="?android:attr/textColorPrimary"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

@@ -72,6 +72,7 @@
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_marginTop="180dp"
+                    app:cardBackgroundColor="#FFFFFF"
                     app:cardCornerRadius="20dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -81,7 +82,7 @@
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent" >
+                        android:layout_height="match_parent">
 
                         <com.google.android.material.textfield.TextInputLayout
                             android:id="@+id/textInputLayout6"
@@ -92,6 +93,7 @@
                             android:layout_marginTop="55dp"
                             android:layout_marginEnd="32dp"
                             android:hint="Nama"
+                            android:textColorHint="@color/black"
                             app:boxBackgroundColor="#00FFFFFF"
                             app:boxCornerRadiusBottomEnd="25dp"
                             app:boxCornerRadiusBottomStart="25dp"
@@ -106,7 +108,8 @@
                                 android:id="@+id/txtInputNama"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Jackly" />
+                                android:text="Jackly"
+                                android:textColor="@color/black" />
                         </com.google.android.material.textfield.TextInputLayout>
 
                         <com.google.android.material.textfield.TextInputLayout
@@ -118,6 +121,7 @@
                             android:layout_marginTop="16dp"
                             android:layout_marginEnd="32dp"
                             android:hint="Alamat"
+                            android:textColorHint="@color/black"
                             app:boxBackgroundColor="#00FFFFFF"
                             app:boxCornerRadiusBottomEnd="25dp"
                             app:boxCornerRadiusBottomStart="25dp"
@@ -132,7 +136,8 @@
                                 android:id="@+id/txtInputAlamat"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Jalan Kebangsaan Timur" />
+                                android:text="Jalan Kebangsaan Timur"
+                                android:textColor="@color/black" />
                         </com.google.android.material.textfield.TextInputLayout>
 
                         <com.google.android.material.textfield.TextInputLayout
@@ -144,6 +149,7 @@
                             android:layout_marginTop="16dp"
                             android:layout_marginEnd="32dp"
                             android:hint="Pekerjaan"
+                            android:textColorHint="@color/black"
                             app:boxBackgroundColor="#00FFFFFF"
                             app:boxCornerRadiusBottomEnd="25dp"
                             app:boxCornerRadiusBottomStart="25dp"
@@ -158,7 +164,8 @@
                                 android:id="@+id/txtInputPekerjaan"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Mahasiswa" />
+                                android:text="Mahasiswa"
+                                android:textColor="@color/black" />
                         </com.google.android.material.textfield.TextInputLayout>
 
                         <com.google.android.material.textfield.TextInputLayout
@@ -170,6 +177,7 @@
                             android:layout_marginTop="16dp"
                             android:layout_marginEnd="32dp"
                             android:hint="Tanggal Lahir"
+                            android:textColorHint="@color/black"
                             app:boxBackgroundColor="#00FFFFFF"
                             app:boxCornerRadiusBottomEnd="25dp"
                             app:boxCornerRadiusBottomStart="25dp"
@@ -185,7 +193,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:inputType="date"
-                                android:text="16/05/1380" />
+                                android:text="16/05/1380"
+                                android:textColor="@color/black" />
                         </com.google.android.material.textfield.TextInputLayout>
 
                         <Button
