@@ -149,6 +149,7 @@
                     android:layout_marginTop="24dp"
                     android:layout_marginEnd="16dp"
                     android:layout_marginBottom="64dp"
+                    android:fontFamily="@font/poppins_bold"
                     android:text="Submit"
                     app:cornerRadius="50dp"
                     app:layout_constraintBottom_toBottomOf="parent"
