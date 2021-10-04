@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.fragment_search.*
 
 class SearchFragment : Fragment() {
     private lateinit var viewModel1: SearchViewModel
-    private val searchListAdapter = SearchAdapter(arrayListOf())
+    private val searchListAdapter = MyRecipeAdapter(arrayListOf())
     fun observeViewModel() {
         viewModel1.recipesLD.observe(viewLifecycleOwner, Observer {
             searchListAdapter.updateFeaturedList(it)

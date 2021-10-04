@@ -10,14 +10,14 @@ import com.ubaya.thecook160418027.R
 import com.ubaya.thecook160418027.Util.loadImage
 import kotlinx.android.synthetic.main.card_home2.view.*
 
-class SearchAdapter(val resepList:ArrayList<Resep>): RecyclerView.Adapter<SearchAdapter.SearchViewHolder>(){
-    class SearchViewHolder(var view: View) : RecyclerView.ViewHolder(view)
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):SearchViewHolder {
+class MyRecipeAdapter(val resepList:ArrayList<Resep>): RecyclerView.Adapter<MyRecipeAdapter.MyRecipeViewHolder>(){
+    class MyRecipeViewHolder(var view: View) : RecyclerView.ViewHolder(view)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):MyRecipeViewHolder {
         val inflater = LayoutInflater.from(parent.context)
         val view = inflater.inflate(R.layout.card_home2, parent, false)
-        return SearchViewHolder(view)
+        return MyRecipeViewHolder(view)
     }
-    override fun onBindViewHolder(holder: SearchViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: MyRecipeViewHolder, position: Int) {
         holder.view.txtNama.text = resepList[position].name
         holder.view.cardResep2.setOnClickListener {
             val action = resepList[position].id?.let { it1 ->
