@@ -1,4 +1,4 @@
-package com.ubaya.thecook160418027.View
+package com.ubaya.thecook160418027.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,11 +9,12 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ubaya.thecook160418027.R
-import com.ubaya.thecook160418027.ViewModel.SearchViewModel
+import com.ubaya.thecook160418027.viewModel.MyRecipesViewModel
+import com.ubaya.thecook160418027.viewModel.SearchViewModel
 import kotlinx.android.synthetic.main.fragment_myrecipe.*
 
 class MyRecipeFragment : Fragment() {
-    private lateinit var viewModel1: SearchViewModel
+    private lateinit var viewModel1: MyRecipesViewModel
     private val searchListAdapter = MyRecipeAdapter(arrayListOf())
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -38,7 +39,7 @@ class MyRecipeFragment : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewModel1 = ViewModelProvider(this).get(SearchViewModel::class.java)
+        viewModel1 = ViewModelProvider(this).get(MyRecipesViewModel::class.java)
         viewModel1.refresh()
         recMyRecipes.layoutManager = LinearLayoutManager(context)
         recMyRecipes.adapter = searchListAdapter

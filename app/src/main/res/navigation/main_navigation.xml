@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/itemHome"
-        android:name="com.ubaya.thecook160418027.View.HomeFragment"
+        android:name="com.ubaya.thecook160418027.view.HomeFragment"
         android:label="The Cook"
         tools:layout="@layout/fragment_home" >
         <action
@@ -29,7 +29,7 @@
     </fragment>
     <fragment
         android:id="@+id/itemSearch"
-        android:name="com.ubaya.thecook160418027.View.SearchFragment"
+        android:name="com.ubaya.thecook160418027.view.SearchFragment"
         android:label="Search"
         tools:layout="@layout/fragment_search" >
         <action
@@ -51,12 +51,12 @@
     </fragment>
     <fragment
         android:id="@+id/itemAdd"
-        android:name="com.ubaya.thecook160418027.View.AddResepFragment"
+        android:name="com.ubaya.thecook160418027.view.AddResepFragment"
         android:label="Submit Resep"
         tools:layout="@layout/fragment_add_resep" />
     <fragment
         android:id="@+id/itemMyRecipe"
-        android:name="com.ubaya.thecook160418027.View.MyRecipeFragment"
+        android:name="com.ubaya.thecook160418027.view.MyRecipeFragment"
         android:label="My Recipes"
         tools:layout="@layout/fragment_myrecipe">
         <action
@@ -78,7 +78,7 @@
     </fragment>
     <fragment
         android:id="@+id/itemProfile"
-        android:name="com.ubaya.thecook160418027.View.ProfileFragment"
+        android:name="com.ubaya.thecook160418027.view.ProfileFragment"
         android:label="Profile"
         tools:layout="@layout/fragment_profile" >
         <action
@@ -92,7 +92,7 @@
     </fragment>
     <fragment
         android:id="@+id/detilResepFragment"
-        android:name="com.ubaya.thecook160418027.View.DetilResepFragment"
+        android:name="com.ubaya.thecook160418027.view.DetilResepFragment"
         android:label="Detil Resep"
         tools:layout="@layout/fragment_detil_resep">
         <argument
@@ -126,7 +126,7 @@
     </fragment>
     <fragment
         android:id="@+id/itemAbout"
-        android:name="com.ubaya.thecook160418027.View.AboutFragment"
+        android:name="com.ubaya.thecook160418027.view.AboutFragment"
         android:label="About"
         tools:layout="@layout/fragment_about" >
         <action
@@ -140,7 +140,7 @@
     </fragment>
     <fragment
         android:id="@+id/itemSetting"
-        android:name="com.ubaya.thecook160418027.View.SettingFragment"
+        android:name="com.ubaya.thecook160418027.view.SettingFragment"
         android:label="Settings"
         tools:layout="@layout/fragment_setting">
         <action

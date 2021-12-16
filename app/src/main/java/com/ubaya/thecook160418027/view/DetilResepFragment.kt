@@ -1,4 +1,4 @@
-package com.ubaya.thecook160418027.View
+package com.ubaya.thecook160418027.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,8 +8,8 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.ubaya.thecook160418027.R
-import com.ubaya.thecook160418027.Util.loadImage
-import com.ubaya.thecook160418027.ViewModel.DetailResepViewModel
+import com.ubaya.thecook160418027.util.loadImage
+import com.ubaya.thecook160418027.viewModel.DetailResepViewModel
 import kotlinx.android.synthetic.main.fragment_detil_resep.*
 
 class DetilResepFragment : Fragment() {
@@ -24,8 +24,8 @@ class DetilResepFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider(this).get(DetailResepViewModel::class.java)
-        viewModel.fetch(DetilResepFragmentArgs.fromBundle(requireArguments()).id,DetilResepFragmentArgs.fromBundle(requireArguments()).name,DetilResepFragmentArgs.fromBundle(requireArguments()).bahan,
-            DetilResepFragmentArgs.fromBundle(requireArguments()).langkah,DetilResepFragmentArgs.fromBundle(requireArguments()).imgUrl)
+        DetilResepFragmentArgs.fromBundle(requireArguments()).id?.toInt()
+            ?.let { viewModel.fetch(it) }
         observer()
     }
     fun observer(){

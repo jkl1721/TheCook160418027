@@ -1,4 +1,4 @@
-package com.ubaya.thecook160418027.View
+package com.ubaya.thecook160418027.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

@@ -1,4 +1,4 @@
-package com.ubaya.thecook160418027.View
+package com.ubaya.thecook160418027.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -19,8 +19,5 @@ class ProfileFragment : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        btnSubmit.setOnClickListener {
-            Snackbar.make(view, "Profile saved!.", Snackbar.LENGTH_LONG).show()
-        }
     }
 }
