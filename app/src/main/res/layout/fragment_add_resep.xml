@@ -2,6 +2,10 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="resep" type="com.ubaya.thecook160418027.model.Resep" />
+        <variable name="addlistener" type="com.ubaya.thecook160418027.view.AddResepListener" />
+    </data>
 <FrameLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -59,6 +63,7 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/txtNama"
+                        android:text="@={resep.name}"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -86,6 +91,7 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/txtBahan"
                         android:layout_width="match_parent"
+                        android:text="@={resep.bahan}"
                         android:layout_height="match_parent" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -112,6 +118,7 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/txtLangkah"
+                        android:text="@={resep.langkah}"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -140,6 +147,7 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/txtUrl"
                         android:layout_width="match_parent"
+                        android:text="@={resep.imgUrl}"
                         android:layout_height="wrap_content" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -150,6 +158,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="24dp"
                     android:layout_marginEnd="16dp"
+                    android:onClick="@{(view)->addlistener.onAddResepClick(view,resep)}"
                     android:layout_marginBottom="64dp"
                     android:fontFamily="@font/poppins_bold"
                     android:text="Submit"

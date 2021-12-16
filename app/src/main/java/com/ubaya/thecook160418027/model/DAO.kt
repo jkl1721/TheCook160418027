@@ -18,4 +18,10 @@ interface DAO {
 
     @Query("SELECT * FROM resep WHERE name LIKE :text")
     suspend fun selectResepWhere(text:String): List<Resep>
+
+    @Query("UPDATE resep SET name=:name, bahan=:bahan, langkah=:langkah, imgUrl=:imgUrl WHERE id = :id")
+    suspend fun updateResep(name:String, bahan:String, langkah:Int, imgUrl:String, id:Int)
+
+    @Delete
+    suspend fun deleteResep(resep:Resep)
 }

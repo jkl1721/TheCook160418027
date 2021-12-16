@@ -2,6 +2,10 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="isCek" type="boolean" />
+        <variable name="darkCheck" type="com.ubaya.thecook160418027.view.DarkChecked" />
+    </data>
 <FrameLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -63,11 +67,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="197dp"
                     android:layout_marginTop="8dp"
+                    android:checked="@={isCek}"
+                    android:onCheckedChanged="@{(cb, isChecked) -> darkCheck.onCheckChanged(cb, isChecked)}"
                     android:layout_marginEnd="33dp"
                     android:layout_marginBottom="8dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/textView11"
+                    app:layout_constraintStart_toEndOf="@+id/textView14"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 

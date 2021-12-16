@@ -8,15 +8,15 @@ import androidx.room.PrimaryKey
 @Entity
 data class Resep(
     @ColumnInfo(name="name")
-    val name:String?,
+    var name:String?,
     @ColumnInfo(name="bahan")
-    val bahan:String?,
+    var bahan:String?,
     @ColumnInfo(name="langkah")
-    val langkah:String?,
+    var langkah:String?,
     @ColumnInfo(name="imgUrl")
-    val imgUrl:String?,
+    var imgUrl:String?,
     @ColumnInfo(name="uuid")
-    val uid:Int=1
+    var uid:Int=1
 )  {
     @PrimaryKey(autoGenerate = true)
     var id:Int = 0
